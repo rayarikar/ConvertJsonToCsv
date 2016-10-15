@@ -1,9 +1,10 @@
-# Export-to-Excel
-This is an open-source library that you can use to export json data to a flat csv which can be opened directly by excel. This library does not endorse Excel as a default app to open a csv file.
+# Convert-Json-To-Csv
+This is an open-source utility that lets you convert json data to a flat csv which can be opened directly by any text editors, excel, etc. 
+Note: This utility does not endorse Excel as a default app to open a csv file.
 
 ## Installation 
 ```bash
-npm install export-to-excel
+npm install convert-json-to-csv
 ```
 
 ## Usage
@@ -12,8 +13,8 @@ The library offers support for converting two types of json data into csv. The u
 ###Usage 1- Array of Arrays
 
 ```javascript
-var exportToExcel = require('export-to-excel');
-var arrayOfArraysCsv = exportToExcel.exportArrayOfArrays(inputJson);
+var jsonToCsv = require('convert-json-to-csv');
+var arrayOfArraysCsv = jsonToCsv.convertArrayOfArrays(inputJson);
 ```
 #####Sample inputJson: 
 [["Column 1", "Column 2"], ["Row1Column1", "Row1Column2"], ["Row2Column1", "Row2Column2"]]
@@ -21,8 +22,8 @@ var arrayOfArraysCsv = exportToExcel.exportArrayOfArrays(inputJson);
 ###Usage 2- Array of Objects
 
 ```javascript
-var exportToExcel = require('export-to-excel');
-var arrayOfObjectsCsv = exportArrayOfObjects(inputJson, columnDefinitionArray);
+var jsonToCsv = require('convert-json-to-csv');
+var arrayOfObjectsCsv = convertArrayOfObjects(inputJson, columnDefinitionArray);
 ```
 
 #####Sample inputJson: 
@@ -31,4 +32,10 @@ var arrayOfObjectsCsv = exportArrayOfObjects(inputJson, columnDefinitionArray);
 
 #####Sample ColumnDefinitionArray: 
 ["Column 1", "Column 2"]
+
+## Test
+The utility can be tested using the following command
+```bash
+npm test
+```
 
