@@ -1,0 +1,40 @@
+{
+  "name": "convert-json-to-csv",
+  "version": "1.0.0",
+  "description": "An utility to convert json to csv",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rayarikar/ConvertJsonToCsv.git"
+  },
+  "keywords": [
+    "convert",
+    "json",
+    "to",
+    "csv",
+    "convert-json-to-csv",
+    "convert",
+    "json",
+    "csv",
+    "json",
+    "to",
+    "csv",
+    "json-to-csv"
+  ],
+  "author": "Rohan Rayarikar <rayarikar.rohan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rayarikar/ConvertJsonToCsv/issues"
+  },
+  "homepage": "https://github.com/rayarikar/ConvertJsonToCsv#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "express": "^4.14.0",
+    "jasmine-node": "^1.14.5",
+    "path": "^0.12.7",
+    "require": "^2.4.20"
+  }
+}
