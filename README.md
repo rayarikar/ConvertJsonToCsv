@@ -10,27 +10,27 @@ npm install convert-json-to-csv
 ## Usage
 The library offers support for converting two types of json data into csv. The usages for both types, array of arrays and array of objects, is shown below.
 
-###Usage 1- Array of Arrays
+### Usage 1- Array of Arrays
 
 ```javascript
 var jsonToCsv = require('convert-json-to-csv');
 var arrayOfArraysCsv = jsonToCsv.convertArrayOfArrays(inputJson);
 ```
-#####Sample inputJson: 
+##### Sample inputJson: 
 [["Column 1", "Column 2"], ["Row1Column1", "Row1Column2"], ["Row2Column1", "Row2Column2"]]
 
-###Usage 2- Array of Objects
+### Usage 2- Array of Objects
 
 ```javascript
 var jsonToCsv = require('convert-json-to-csv');
 var arrayOfObjectsCsv = convertArrayOfObjects(inputJson, columnDefinitionArray);
 ```
 
-#####Sample inputJson: 
+##### Sample inputJson: 
 [{"Column 1" : "Row1Column1", "Column 2" : "Row1Column2"}, 
 {"Column 1" : "Row2Column1", "Column 2" : "Row2Column2"}]
 
-#####Sample ColumnDefinitionArray: 
+##### Sample ColumnDefinitionArray: 
 ["Column 1", "Column 2"]
 
 ## Test
